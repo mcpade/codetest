@@ -1,0 +1,46 @@
+
+
+
+
+
+Entities
+
+Entities represent objects or things of interest: Students, Academic Programmes, Modules, Instructors
+
+Attributes
+
+Attributes are facts, aspects, properties, or details about an entity
+Students have: ID, First Name, Last Name
+Academic Programms have: ID, Name
+Modules have: ID, Name, N Credits
+Instructors have: ID, First Name, Last Name
+
+Relationships
+
+Relationships are an association between two or more entities
+Enroll: Each Student takes several Academic Programmes (not in the same year)
+I add to this relationship the attribute academic_year
+
+Offer: Each Academic Programm offers several Modules
+I add to this relationship the attribute academic_year
+
+Teach: Each Instructor teaches several Modules (Each module is taught  	by an    instructor within an academic year, within a programme)
+I add to this relationship the attribute academic_year and the academic programm
+
+
+Cardinality Ratios
+
+Each entity in a relationship can participate in zero, one, or more than one instances of that relationship
+
+Enroll (M:N):
+Each student can enroll in several academics programmes (1:M) (not in the same year)
+Multiple students can enroll in one program (1:N)
+Offer (M:N)
+Each academic program offers several modules (1:M)
+Each module can be offered by various programs (1:N)
+Teach (M:N)
+Each instructor teaches several modules (1:M)
+One module can be taught by multiple teachers (1:N) (Each module is taught by an instructor within an academic year, within a programme)
+
+
+
